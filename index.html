@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Principal</title>
+    <script src="js/bootstrap.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <head>
+                <h1 class="text-center">Control de gastos</h1>
+            </head>
+            <section class="cotenido-principal">
+                <div class="row">
+                    <div class="col">
+                        <div class="contenido-gastos">
+                            <h2 class="text-center">Añade los gastos aqui</h2>
+                            <form id="agregar gasto" action="#">
+                                <div class="form-group">
+                                    <label for="gasto">Gasto:</label>
+                                    <input type="text" class="form-control" id="gasto" placeholder="Nombre del gasto">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cantidad">Valor:</label>
+                                    <input type="number" class="form-control" id="cantidad" placeholder="Valor en $">
+
+
+                                </div>
+                                <button type="submit" class="btn btn-danger">Agregar</button>
+                            </form>
+                        </div><!--contenido-gastos-->
+                    </div><!--col-->
+                     <div class="col">
+                        <div class="contendi-lista">
+                            <h2 class="text-center">Listado de gastos</h2>
+                            <div id="gastos">
+                                <ul class="list-group"></ul>
+                            </div>
+                            <div id="presupuesto" class="presupuesto">
+                                <div class="alert alert-warning">
+                                    <p>Preosupuesto :$ <span id="total"></span></p>
+                                </div>
+                                <div class="restante alert alert-primary">
+                                    <p>Restante:$ <span id="restante"></span></p>
+
+                                </div>
+
+                            </div><!--preosupuesto-->
+
+                        </div> 
+
+                    </div>
+                </div>
+           </section>
+     </div>
+    </body>
+
+</html>
